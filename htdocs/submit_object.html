@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src='/js/lilian.js'></script>
+<script type="text/javascript">
+
+//place local javascript here
+function submit() {
+	console.log("You pressed submit!");
+	var url = $("#url").val();
+	var title = $("#title").val(); 
+	var category = $("#category").val();
+
+	submit_object(url,title,category,"banana");
+	}
+
+</script>
+
+</head>
+
+
+Url: <input type=text id=url name=url value="url" onclick="this.value='';"><br />
+Title: <input type=text id=title name=title value="title" onclick="this.value='';"><br />
+Category: <input type=text id=category name=category value="category" onclick="this.value='';"><br />
+
+
+<input type=button value='Submit' onclick="submit()">
+</html>
