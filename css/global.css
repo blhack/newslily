@@ -1,0 +1,8 @@
+.object_title a:link {
+color:#ff0022;
+text-decoration:none;
+}
+
+.object_title a:visited {
+color:#111111;
+}

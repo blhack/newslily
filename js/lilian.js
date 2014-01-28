@@ -49,8 +49,13 @@ function populate_with_links(div,last) {
 			link = data[link]
 			console.log("Blink"); //debug
 			console.log(link);
-			$("#links").append(link["url"]);
-			$("#links").append("<br />");
+			object = "<div class=link>"
+			object += "<div id=" + link["id"] + " class=object_title><a href='" + link["url"] + "'>" + link["title"] + "</a>";
+			object += "<div class=object_byline> Submitted <span class=age>some time</span> ago by <span class=submitter_name>" + link["user"] + "</span>";
+			object += "</div>";
+			object += "</div>";
+			object += "</div>";
+			$("#links").append(object);
 			}
 		})
 	}

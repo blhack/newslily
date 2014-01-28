@@ -1,0 +1,23 @@
+.object_title {
+padding-top:50px;
+font-size:50px;
+color:#000000;
+font-family: 'Duru Sans', sans-serif;
+}
+
+.object_byline {
+padding-top:2px;
+font-family:'Droid Sans', sans-serif;
+font-size:35px;
+color:#2b2b2b
+}
+
+#body_container {
+width:100%;
+max-width:980px;
+height:100%;
+}
+
+.link:nth-of-type(odd) {
+background:#2b2b2b;
+}
